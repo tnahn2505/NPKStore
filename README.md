@@ -1,3 +1,3 @@
-# DUAN1_BOOKSTORE
-Nhóm 2 (Khoa, Hi, Hảo, Kiệt)
-Hello
+# NPKStore Website
+Deployed by Nhan, Kiet, Phuoc
+
