@@ -1,0 +1,137 @@
+.courses-area .properties {
+    margin: 0 15px
+}
+
+.courses-area .properties.properties2 {
+    margin-bottom: 30px
+}
+
+.courses-area .properties__card {
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4
+}
+
+// .courses-area .properties__card:hover {
+//     border: 1px solid $primary-color;
+// }
+
+.courses-area .properties__card:hover {
+    box-shadow: 0px 1px 1px 0px $primary-color;
+}
+
+.courses-area .properties__img img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative
+}
+
+.courses-area .properties__caption {
+    padding: 29px 20px 20px 20px
+}
+
+.courses-area .properties__caption h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .courses-area .properties__caption h3 {
+        font-size: 16px
+    }
+}
+
+.courses-area .properties__caption h3 a {
+    text-decoration: underline transparent
+}
+
+.courses-area .properties__caption h3 a:hover {
+    text-decoration: underline;
+    color: #4255A4
+}
+
+.courses-area .properties__caption P {
+    color: #6E7697
+}
+
+.courses-area .properties__caption P span {
+    color: #C86FFF;
+    font-size: 16px
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .courses-area .properties__caption P span {
+        font-size: 12px
+    }
+}
+
+.courses-area .properties__footer {
+    margin-bottom: 22px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+@media (max-width: 575px) {
+    .courses-area .properties__footer {
+        padding: 19px 10px 20px 12px
+    }
+}
+
+.courses-area .properties__footer .restaurant-name p {
+    display: inline-block;
+    color: #6E7697
+}
+
+.courses-area .properties__footer .restaurant-name p span {
+    color: #FF7B2E;
+    font-size: 12px
+}
+
+.courses-area .properties__footer .price span {
+    cursor: pointer;
+    font-weight: 700;
+    color: #4255A4;
+    font-size: 23px
+}
+
+.courses-area .properties:hover .border-btn2 {
+    color: #fff;
+    background: #FF9F67;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.course-item li a span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.course-item li a span i{
+    font-size: 8px;
+}
+
+.course-buy-product li a span{
+    
+    background: rgb(255, 255, 255);
+    
+}
+
+.course-buy-product li a span i{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100%;
+    }
+
+    #success_tic .page-body {
+      max-width: 300px;
+      background-color: #ffffff;
+      margin: 10% auto;
+    }
+
+    #success_tic .page-body .head {
+      text-align: center;
+    }
+
+    /* #success_tic .tic{
+  font-size:186px;
+} */
+    #success_tic .close {
+      opacity: 1;
+      position: absolute;
+      right: 0px;
+      font-size: 30px;
+      padding: 3px 15px;
+      margin-bottom: 10px;
+    }
+
+    #success_tic .checkmark-circle {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .checkmark-circle .background {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #1ab394;
+      position: absolute;
+    }
+
+    #success_tic .checkmark-circle .checkmark {
+      border-radius: 5px;
+    }
+
+    #success_tic .checkmark-circle .checkmark.draw:after {
+      -webkit-animation-delay: 300ms;
+      -moz-animation-delay: 300ms;
+      animation-delay: 300ms;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease;
+      -moz-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-name: checkmark;
+      -moz-animation-name: checkmark;
+      animation-name: checkmark;
+      -webkit-transform: scaleX(-1) rotate(135deg);
+      -moz-transform: scaleX(-1) rotate(135deg);
+      -ms-transform: scaleX(-1) rotate(135deg);
+      -o-transform: scaleX(-1) rotate(135deg);
+      transform: scaleX(-1) rotate(135deg);
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    #success_tic .checkmark-circle .checkmark:after {
+      opacity: 1;
+      height: 75px;
+      width: 37.5px;
+      -webkit-transform-origin: left top;
+      -moz-transform-origin: left top;
+      -ms-transform-origin: left top;
+      -o-transform-origin: left top;
+      transform-origin: left top;
+      border-right: 15px solid #fff;
+      border-top: 15px solid #fff;
+      border-radius: 2.5px !important;
+      content: "";
+      left: 35px;
+      top: 80px;
+      position: absolute;
+    }
+
+    @-webkit-keyframes checkmark {
+      0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+      }
+
+      20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+      }
+
+      40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+      }
+
+      100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes checkmark {
+      0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+      }
+
+      20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+      }
+
+      40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+      }
+
+      100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes checkmark {
+      0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+      }
+
+      20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+      }
+
+      40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+      }
+
+      100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+      }
+    }
+
+    .modal-content {
+      display: none;
+    }
+
+    .modal-content > .active {
+      display: flex;
+    }
+
+    .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+    display: none;
+  }
+    .modal-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+
+  <body>
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Open Modal</button> -->
+
+    <!-- Modal -->
+    
+    <div id="success_tic">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <button class="close-success btn btn-success" style="font-size: 30px">
+            X
+          </button>
+          <div class="page-body">
+            <div class="head">
+              <h4>Thêm vào giỏ hàng thành công</h4>
+            </div>
+
+            <h1 style="text-align: center">
+              <div class="checkmark-circle">
+                <div class="background"></div>
+                <div class="checkmark draw"></div>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!-- Mã JavaScript để hiển thị modal -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      // Lấy tham chiếu đến phần tử .modal-content
+      var modalContent = document.querySelector(".modal-content");
+
+      var close_success = document.querySelector(".close-success");
+      var modal_overlay = document.querySelector(".modal-overlay");
+      console.log(modal_overlay);
+      // Hiển thị .modal-content
+      function showContent() {
+        modalContent.style.display = "flex";
+      }
+
+      // Ẩn .modal-content
+      function hideContent() {
+        modalContent.style.display = "none";
+      }
+
+      close_success.addEventListener("click", function () {
+        hideContent();
+      });
+
+      // modal_overlay.addEventListener('click', function() {
+      //     hideContent();
+      // })
+
+      // Gọi hàm showContent để hiển thị .modal-content
+      showContent();
+    </script>
+  </body>
+</html>

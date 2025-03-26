@@ -1,0 +1,54 @@
+.link-hover {
+    color: #111111;
+}
+
+.link-hover:hover {
+    color: #007dcc;
+}
+
+.link-not-hover {
+    color: #007dcc;
+}
+
+.link-not-hover:hover {
+    color: #111111;
+    
+}
+
+.btn-custom {
+    color: #007dcc;
+    background-color: white;
+    border-color: #007dcc;
+}
+.btn-custom:hover {
+    background: #f0f0f1;
+    border-color: #0a4b78;
+    color: #0a4b78;
+}
+
+.text-custom {
+    color: #007dcc;
+}
+
+
+/* Video */
+.video-courses .box-video{
+    width: 100%; height: 600px
+}
+
+.video-courses .box-video iframe{
+    width: 100%; height: 100%;
+}
+
+.video-courses .box-video video{
+    width: 100%; height: 100%;
+}
+
+.btn-small {
+    padding: .05rem 0.2rem;
+    font-size: .85rem;
+}
+
+.bg-custom {
+    background-color: #F5F5F5;
+}
